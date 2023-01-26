@@ -9,8 +9,8 @@
 
 img{
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: max(25vw, 8rem);
+    height: max(25vw, 8rem);
 }
 
 /* UTILITY CLASSES */
@@ -92,6 +92,7 @@ footer{
     display: flex;
     flex-flow: nowrap;
     flex-direction: column;
+    align-items: center;
 }
 
 .card img{
