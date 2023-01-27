@@ -64,7 +64,7 @@ nav a, nav a:visited{
 }
 
 nav a:hover, nav a:focus{
-    color: hsla(0, 0%, 20%, 0.6);
+    color: #badbea;
     text-decoration: underline;
 }
 
@@ -85,7 +85,8 @@ footer{
 /* PROFILE CARD */
 .card{
     scroll-margin-top: 8rem;
-    width: min(100%, 350px);
+    width: max(calc(20vw - 1rem), 350px);
+    /* width: max(100%, 350px); */
     /* background-color: #cee1ea; */
     background-color: rgb(219, 235, 243);
     border: 2px solid #6161de; 
@@ -123,6 +124,12 @@ p{
     text-align: center;
 }
 
+/* VERY SMALL */
+@media screen and (min-width: 280px) {
+    .card{
+        width: min(100%, 250px);
+    }
+}
 /* SMALL */
 @media screen and (min-width: 576px) {
     main{
@@ -130,17 +137,28 @@ p{
         flex-flow: row wrap;
         padding: 1rem;
     }
-    .card{
-        width: min(100%, 400px);
-    }
+    /* .card{
+        width: min(100%, 250px);
+    } */
     .card:last-child{
         order: -1;
     }
 }
 /* SMALL */
 @media screen and (min-width: 768px) {
-    nav{
+    /* nav{
         display: none;
+    } */
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav{
+        display: flex;
+        width: 20vw;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: linear-gradient(#6161de, #6161de, #6161de);
     }
     .card{
         width: min(100%, 325px);
@@ -157,9 +175,9 @@ p{
 }
 /* LARGE */
 @media screen and (min-width: 992px) {
-    .card {
+    /* .card {
         width: 100% 400px;
-    }
+    } */
     .card:nth-child(2){
         order: -1;
     }
@@ -167,7 +185,7 @@ p{
 /* XTRA LARGE */
 @media screen and (min-width: 1200px) {
     .card {
-        width: min(calc(33% - 1rem), 500px);
+        width: min(calc(25% - 1rem), 500px);
     }
     .card:nth-child(2){
         order: -1;
