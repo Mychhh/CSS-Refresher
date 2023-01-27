@@ -9,8 +9,8 @@
 
 img{
     display: block;
-    width: max(25vw, 8rem);
-    height: max(25vw, 8rem);
+    width: max(20vw, 25vh, 10rem);
+    height: max(20vw, 25vh, 10rem);
 }
 
 /* UTILITY CLASSES */
@@ -104,6 +104,11 @@ footer{
     font-weight: bolder;
     font-size: 2rem;
     margin: 1rem;
+    text-align: center;
+}
+
+p{
+    height: 50px;
     text-align: center;
 }
 
